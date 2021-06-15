@@ -13,8 +13,11 @@ const app = Vue.createApp({
             this.type = event.target.value;
         },
         save() {
-            if (this.type === '' && this.amount === '') {
-                alert("Please Select any option")
+            if (this.type === '') {
+                alert("Please Select any option ");
+            }
+            else if (this.amount === '') {
+                alert("Please enter some amount");
             }
             else {
                 if (this.type === 'income') {
