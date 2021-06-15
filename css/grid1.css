@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    font-family: Poppins;
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    height: 20px;
+    background: purple;
+    border-radius: 25px;
+}
+
+.container {
+    padding: 60px;
+    width: 800px;
+    margin: auto;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4px;
+    grid-template-rows: 150px;
+}
+
+.input-area {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4px;
+}
+
+input {
+    border: 2px solid grey;
+    padding: 5px;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    color: lavender;
+}
+
+select {
+    border: 2px solid grey;
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    color: lightgray;
+}
+
+.button-area {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-column-gap: 4px;
+}
+
+.clear-btn {
+    border: none;
+    background: red;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: serif;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.save-btn {
+    border: none;
+    background: green;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: serif;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+h3 {
+    color: chartreuse;
+    margin: 5px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: coral;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.item-box {
+    border-radius: 25px;
+    padding: 5px;
+    border: 2px solid rgb(116, 89, 89);
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+[v-cloak] {
+    display: none;
+}

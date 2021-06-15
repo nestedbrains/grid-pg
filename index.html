@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/grid1.css">
+    <title>VUE JS 3</title>
+</head>
+
+<body>
+    <div class="main" id="app">
+        <div class="header">
+        </div>
+        <div class="container">
+            <div class="options" >
+                <div class="income item-box">
+                    <h3>Income</h3>
+                    <hr>
+                    <h2 v-cloak>{{income}}</h2>
+                </div>
+                <div class="expense item-box">
+                    <h3>Expense</h3>
+                    <hr>
+                    <h2 v-cloak>{{expense}}</h2>
+                </div>
+                <div class="other item-box">
+                    <h3>Other</h3>
+                    <hr>
+                    <h2 v-cloak>{{other}}</h2>
+                </div>
+            </div>
+            <div class="input-area">
+                <div class="input-field">
+                    <input v-model="amount" placeholder="Input your amount" type="number">
+                </div>
+                <div class="select-options">
+                    <select v-model="type" name="type" id="" @change="optionSelection($event)">
+                        <option value="">No Selection</option>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                        <option value="other">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-area">
+                <button class="clear-btn">Clear</button>
+                <button @click="save" class="save-btn">Save </button>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
